@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Python Documentation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Python Documentation</header>
+            <a href="#Introduction" class="nav-link">Introduction</a>
+            <a href="#Getting_Started" class="nav-link">Getting Started</a>
+            <a href="#Variables_and_Types" class="nav-link">Variables and Types</a>
+            <a href="#Control_Flow" class="nav-link">Control Flow</a>
+            <a href="#Functions" class="nav-link">Functions</a>
+            <a href="#Modules_and_Packages" class="nav-link">Modules and Packages</a>
+            <a href="#File_Handling" class="nav-link">File Handling</a>
+            <a href="#Error_Handling" class="nav-link">Error Handling</a>
+            <a href="#Advanced_Topics" class="nav-link">Advanced Topics</a>
+            <a href="#References" class="nav-link">References</a>
+        </nav>
+
+        <main id="main-doc">
+            <section id="Introduction" class="main-section">
+                <header>Introduction</header>
+                <p>Python is a versatile, high-level programming language designed for readability and simplicity. It is widely used for web development, data analysis, machine learning, scientific computing, and more.</p>
+                <p>Python emphasizes code readability with its use of significant indentation. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+                <p>Its extensive standard library and vibrant ecosystem of third-party libraries make Python one of the most popular programming languages today.</p>
+            </section>
+
+            <section id="Getting_Started" class="main-section">
+                <header>Getting Started</header>
+                <p>To start using Python, download and install it from the <a href="https://python.org" target="_blank">official website</a>. Python is available for Windows, macOS, and Linux.</p>
+                <p>Once installed, you can execute Python code in an interactive shell (REPL) or save it to a file with a <code>.py</code> extension and run it using the Python interpreter.</p>
+                <p>Here is an example of a simple Python program:</p>
+                <code>print("Hello, World!")</code>
+            </section>
+            
+            <section id="Variables_and_Types" class="main-section">
+                <header>Variables and Types</header>
+                <p>Python variables are dynamically typed, meaning you do not need to declare their type explicitly.</p>
+                <p>Here are some examples of variable assignment:</p>
+                <code>x = 10  # Integer</code>
+                <code>y = 3.14  # Float</code>
+                <code>name = "Alice"  # String</code>
+                <code>is_active = True  # Boolean</code>
+                <p>Python also supports complex data types such as:</p>
+                <ul>
+                    <li><code>list</code> - Ordered, mutable collection</li>
+                    <li><code>tuple</code> - Ordered, immutable collection</li>
+                    <li><code>dict</code> - Key-value pairs</li>
+                    <li><code>set</code> - Unordered collection of unique items</li>
+                </ul>
+            </section>
+
+            <section id="Control_Flow" class="main-section">
+                <header>Control Flow</header>
+                <p>Control flow statements allow you to execute code conditionally or repeatedly.</p>
+                <p>Python supports the following control flow statements:</p>
+                <ul>
+                    <li><code>if</code> and <code>else</code></li>
+                    <li><code>for</code> loops</li>
+                    <li><code>while</code> loops</li>
+                </ul>
+                <p>Example of an if-else statement:</p>
+                <code>
+                    if x > 0:<br>
+                    &nbsp;&nbsp;print("Positive")<br>
+                    else:<br>
+                    &nbsp;&nbsp;print("Non-positive")
+                </code>
+            </section>
+
+            <section id="Functions" class="main-section">
+                <header>Functions</header>
+                <p>Functions are reusable blocks of code that perform a specific task.</p>
+                <p>You can define a function using the <code>def</code> keyword:</p>
+                <code>
+                    def greet(name):<br>
+                    &nbsp;&nbsp;return f"Hello, {name}"<br>
+                    print(greet("Alice"))
+                </code>
+                <p>Functions can accept parameters and return values, improving code modularity and reusability.</p>
+            </section>
+
+            <section id="Modules_and_Packages" class="main-section">
+                <header>Modules and Packages</header>
+                <p>Modules are files containing Python code that can be imported and reused in other programs. You can create a module by saving your Python code in a file with a <code>.py</code> extension.</p>
+                <p>Python also supports packages, which are collections of modules organized in directories. To create a package, include an <code>__init__.py</code> file in the directory.</p>
+                <p>Example of importing a module:</p>
+                <code>
+                    import math<br>
+                    print(math.sqrt(16))
+                </code>
+            </section>
+
+            <section id="File_Handling" class="main-section">
+                <header>File Handling</header>
+                <p>Python provides built-in support for file handling, allowing you to read from and write to files easily.</p>
+                <p>Example of reading a file:</p>
+                <code>
+                    with open("example.txt", "r") as file:<br>
+                    &nbsp;&nbsp;content = file.read()<br>
+                    &nbsp;&nbsp;print(content)
+                </code>
+                <p>Example of writing to a file:</p>
+                <code>
+                    with open("example.txt", "w") as file:<br>
+                    &nbsp;&nbsp;file.write("Hello, World!")
+                </code>
+            </section>
+
+            <section id="Error_Handling" class="main-section">
+                <header>Error Handling</header>
+                <p>Python uses <code>try</code> and <code>except</code> blocks to handle exceptions and prevent runtime errors from crashing your program.</p>
+                <p>Example:</p>
+                <code>
+                    try:<br>
+                    &nbsp;&nbsp;result = 10 / 0<br>
+                    except ZeroDivisionError:<br>
+                    &nbsp;&nbsp;print("Cannot divide by zero")
+                </code>
+            </section>
+
+            <section id="Advanced_Topics" class="main-section">
+                <header>Advanced Topics</header>
+                <p>Python offers advanced features such as:</p>
+                <ul>
+                    <li>Decorators for modifying the behavior of functions</li>
+                    <li>Generators for creating iterators</li>
+                    <li>Context managers for managing resources</li>
+                    <li>Asynchronous programming with <code>async</code> and <code>await</code></li>
+                </ul>
+                <p>Example of a generator:</p>
+                <code>
+                    def countdown(n):<br>
+                    &nbsp;&nbsp;while n > 0:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;yield n<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;n -= 1<br>
+                    for i in countdown(5):<br>
+                    &nbsp;&nbsp;print(i)
+                </code>
+            </section>
+
+            <section id="References" class="main-section">
+                <header>References</header>
+                <ul>
+                    <li><a href="https://www.python.org/doc/" target="_blank">Python Official Documentation</a></li>
+                    <li><a href="https://realpython.com" target="_blank">Real Python</a></li>
+                    <li><a href="https://docs.python.org/3/tutorial/" target="_blank">Python 3 Tutorial</a></li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
