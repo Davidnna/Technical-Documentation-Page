@@ -25,6 +25,7 @@ body, html {
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 #navbar header {
@@ -109,14 +110,10 @@ ul {
   }
 }
 
+/* Adjustments for Small Screens */
 @media (max-width: 600px) {
   #navbar {
-    width: 150px; /* Reduce navbar width further for very small screens */
     padding: 10px;
-  }
-
-  #main-doc {
-    margin-left: 170px; /* Adjust content margin to match the navbar */
   }
 
   body {
