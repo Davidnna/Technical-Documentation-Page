@@ -1,0 +1,143 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Menu Icon */
+#nav {
+  background-color: #004080;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1em;
+}
+
+#nav .menu-icon {
+  width: 2em;
+  height: 1.5em;
+  position: relative;
+  cursor: pointer;
+}
+
+#nav .menu-icon span {
+  width: 100%;
+  height: 0.2em;
+  background-color: #000;
+  position: absolute;
+}
+
+#nav .menu-icon span:nth-child(2) {
+  top: 50%;
+}
+
+#nav .menu-icon span:nth-child(3) {
+  top: 100%;
+}
+
+/* Navbar Styling */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 21%;
+  height: 100%;
+  background-color: #004080;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2em;
+  box-shadow: 0.12em 0 0.3em #00000080;
+  overflow-y: auto;
+}
+
+/* Navbar link styling */
+#navbar .nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0.35em 0;
+  padding: 0.63em;
+  border-radius: 0.35em;
+  transition: all 0.3s;
+}
+
+#navbar .nav-link:hover {
+  background-color: #0059b3;
+  color: #f0f0f0;
+}
+
+/* Main Content Styling */
+#main-doc .main-section {
+  background-color: white;
+  padding: 1em;
+  border-radius: 0.6em;
+  box-shadow: 0 0.25em 0.5em #0000004d;
+  margin: 2em 4% 2%;
+  margin: 2em 15% 2em 40%;
+  scroll-margin-top: 2em;
+}
+
+#main-doc .main-section h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #004080;
+  border-bottom: 0.1em solid #0059b3;
+  padding-bottom: 0.2em;
+}
+
+/* Code Block Styling */
+#main-doc .main-section code {
+  display: block;
+  background-color: #f4f4f4;
+  border-left: 0.35em solid #004080;
+  padding: 0.6em;
+  margin: 0.6em 0;
+  border-radius: 0.2em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Lists Styling */
+#main-doc .main-section ul {
+  list-style-type: square;
+  padding-left: 1em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 785px) {
+  #navbar {
+    width: max-content;
+    max-width: 70%;
+    top: 3.5em;
+    border-top: #000 solid 0.1em;
+    display: none;
+  }
+
+  #nav  {
+    display: flex;
+  }
+
+  #main-doc .main-section {
+    margin: 2em 4%;
+    scroll-margin-top: 5.5em;
+  }
+
+  #main-doc .main-section#Introduction {
+    margin-top: 5.5em;
+  }
+}
+
+@media (max-width: 389px) {
+  body {
+    font-size: 12px;
+  }
+  
+  #main-doc .main-section h1 {
+    font-size: x-large;
+  }
+}
